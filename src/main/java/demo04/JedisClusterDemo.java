@@ -50,7 +50,8 @@ public class JedisClusterDemo {
     }
     @Test
     public void testDemo(){
-        System.out.println(jedisCluster.get("1"));
+        jedisCluster.set("k1","v1");
+        System.out.println(jedisCluster.get("k1"));
     }
     @After
     public void destroy(){
